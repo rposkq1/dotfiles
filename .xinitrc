@@ -1,8 +1,14 @@
 #!/bin/sh
+#statusbar
+RND=$(head -c 8 /dev/random | xxd -p)
 while true; do
-   xsetroot -name "$( date +"%F %T %s " )"
-   sleep 1s   # Update time every minute
+    if (( $(date +%s) % 60 == 0 )); then
+        RND=$(head -c 8 /dev/random | xxd -p)
+    fi
+    xsetroot -name "$(echo "$RND  $(date +"%F %T %s")  $HOSTNAME ")"
+    sleep 1s
 done &
+
 sleep 1
 xset -b
 unclutter --timeout 1 --jitter 1 --ignore-scrolling --fork --start-hidden
