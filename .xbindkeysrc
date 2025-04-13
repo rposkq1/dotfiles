@@ -126,11 +126,11 @@ Release+Mod1+q
 Mod1+e+Release
 
 #flameshot printscreen /tmp
-"flameshot && flameshot gui -p /tmp/"
+"flameshot; flameshot gui -p /tmp/"
 Shift+Print
 
 #flameshot printscreen
-"flameshot && flameshot gui"
+"flameshot; flameshot gui"
 Print
 
 #thinkvantage x220
