@@ -3,7 +3,7 @@
 RND=$(head -c 8 /dev/random | xxd -p)
 while true; do
     if (( $(date +%s) % 60 == 0 )); then
-        RND=$(head -c 8 /dev/random | xxd -p)
+        RND=$(openssl rand -hex 8)
     fi
     xsetroot -name "$(echo "$RND  $(date +"%F %T %s")  $HOSTNAME ")"
     sleep 1s
