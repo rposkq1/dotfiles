@@ -8,8 +8,6 @@ while xsetroot -name "$(echo "$RND  $(date +"%F %T %s")  $HOSTNAME ")";do
     sleep 1s
 done &
 
-sleep 1
-xset -b
 unclutter --timeout 1 --jitter 1 --ignore-scrolling --fork --start-hidden
 xbindkeys
 setxkbmap -option caps:escape
