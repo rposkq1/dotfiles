@@ -38,4 +38,4 @@ alias yt="yt-dlp -f 'bestaudio[ext=m4a]+bestaudio[height=480]'"
 alias sc=simplex-chat
 alias c=calc
 alias v=vim
-alias cc='cage -s --'
+alias ca='cage -s --'
