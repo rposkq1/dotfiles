@@ -1,7 +1,7 @@
 #!/bin/sh
 #statusbar
 RND=$(openssl rand -hex 8)
-while xsetroot -name "$(echo "$RND  $(date +"%F %T %s")  $HOSTNAME ")";do
+while xsetroot -name "$(echo "$RND  $(date +"%F %T %s")  $PWD $HOSTNAME ")";do
     if (( $(date +%s) % 60 == 0 )); then
         RND=$(openssl rand -hex 8)
     fi
