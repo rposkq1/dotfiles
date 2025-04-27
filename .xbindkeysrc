@@ -142,7 +142,7 @@ Print
    XF86Battery
 
 #display toggle
-"xrandr --listactivemonitors | grep LVDS-1 >/dev/null && xrandr --output LVDS-1 --off || xrandr --output LVDS-1 --auto"
+"~/.monitors"
 XF86Display
 
 
