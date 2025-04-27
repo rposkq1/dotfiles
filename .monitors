@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SELECTION=$(echo -e 'all\nint\next\noff' | dmenu -p "1ext/1int/2mon/off" -fn Terminus)
+SELECTION=$(echo -e 'all\nint\next\noff' | dmenu -i -p "1ext/1int/2mon/off" -fn Terminus)
 
 case $SELECTION in
 ext)

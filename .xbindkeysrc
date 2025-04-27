@@ -138,8 +138,8 @@ Print
    XF86Launch1
 
 #battery
-"acpi -i"
-   XF86Battery
+"xsetroot -name "$(acpi -i)""
+XF86Battery
 
 #display toggle
 "~/.monitors"
