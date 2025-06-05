@@ -133,6 +133,14 @@ Shift+Print
 "pgrep flameshot > /dev/null && flameshot gui || (flameshot & flameshot gui)"
 Print
 
+#slock
+"slock"
+Control+Mod4+l
+
+#slock with suspend
+"slock -- systemctl suspend -i"
+Control+Mod4+p
+
 #thinkvantage x220
 "~/.tv"
    XF86Launch1
