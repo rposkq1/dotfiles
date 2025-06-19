@@ -43,5 +43,3 @@ alias cc='cage -s --'
 alias kl=bashlock
 alias lk=slock
 alias q=qalc
-
-eval "$(thefuck --alias)"
