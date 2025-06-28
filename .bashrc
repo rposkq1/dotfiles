@@ -35,7 +35,7 @@ alias bl=bluetoothctl
 alias tb="nc termbin.com 9999 | xclip -selection c"
 alias lw=librewolf
 alias s=startx
-alias yt="yt-dlp -f 'bestaudio[ext=m4a]+bestaudio[height=480]'"
+alias yt="yt-dlp -f 'bestaudio[ext=m4a]+bestvideo[height=480]'"
 alias sc=simplex-chat
 alias c=calc
 alias v=vim
