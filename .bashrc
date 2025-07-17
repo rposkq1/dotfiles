@@ -17,7 +17,7 @@ alias grep='grep --color=auto'
 complete -cf doas
 complete -cf sudo
 complete -cf man
-fastfetch
+fastfetch -l none
 
 setterm --blank 1 &>/dev/null
 setterm --appcursorkeys off &>/dev/null
