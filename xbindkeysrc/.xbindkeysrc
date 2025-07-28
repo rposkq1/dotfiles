@@ -1,0 +1,168 @@
+keystate_numlock = disable
+keystate_capslock = disable
+keystate_scrolllock= disable
+
+"xdotool key ctrl+alt+F1"
+Control + Alt + 1
+
+"xdotool key ctrl+alt+F2"
+Control + Alt + 2
+
+"xdotool key ctrl+alt+F3"
+Control + Alt + 3
+
+"xdotool key ctrl+alt+F4"
+Control + Alt + 4
+
+"xdotool key ctrl+alt+F5"
+Control + Alt + 5
+
+"xdotool key ctrl+alt+F6"
+Control + Alt + 6
+
+
+
+# Increase volume Master
+"amixer set Master 5%+"
+   XF86AudioRaiseVolume
+
+# Decrease volume Master
+"amixer set Master 5%-"
+   XF86AudioLowerVolume
+
+# mute volume Capture
+"amixer set Capture togglemute 1>/dev/null"
+   XF86AudioMicMute
+
+#mute volume Master
+"amixer set Master togglemute 1>/dev/null"
+   XF86AudioMute
+
+
+# ALT W
+# 10 up
+"xdotool mousemove_relative --sync -- 0 -10"
+Mod1+w
+
+# ALT S
+# 10 down
+"xdotool mousemove_relative --sync -- 0 10"
+Mod1+s
+
+# ALT A
+# 10 left
+"xdotool mousemove_relative --sync -- -10 0"
+Mod1+a
+
+# ALT D
+# 10 right
+"xdotool mousemove_relative --sync -- 10 0"
+Mod1+d
+
+
+
+# ALT CTRL W
+# 10 up
+"xdotool mousemove_relative --sync -- 0 -1"
+Mod1+control+w
+
+# ALT CTRL S
+# 10 down
+"xdotool mousemove_relative --sync -- 0 1"
+Mod1+control+s
+
+# ALT CTRL A
+# 10 left
+"xdotool mousemove_relative --sync -- -1 0"
+Mod1+control+a
+
+# ALT CTRL D
+# 10 right
+"xdotool mousemove_relative --sync -- 1 0"
+Mod1+control+d
+
+
+
+# ALT SHIFT W
+# 10 up
+"xdotool mousemove_relative --sync -- 0 -100"
+Mod1+Shift+w
+
+# ALT SHIFT S
+# 10 down
+"xdotool mousemove_relative --sync -- 0 100"
+Mod1+Shift+s
+
+# ALT SHIFT A
+# 10 left
+"xdotool mousemove_relative --sync -- -100 0"
+Mod1+Shift+a
+
+# ALT SHIFT D
+# 10 right
+"xdotool mousemove_relative --sync -- 100 0"
+Mod1+Shift+d
+
+
+
+# ALT SHIFT Q
+# left click
+"sleep 0.2 && xdotool click 1"
+Mod1+Shift+q
+
+# ALT SHIFT E
+# right click
+"sleep 0.2 && xdotool click 3"
+Mod1+Shift+e
+
+# ALT Q
+# left click
+"xdotool keyup && xdotool click 1"
+Release+Mod1+q
+
+# ALT E
+# right click
+"xdotool click 3"
+Mod1+e+Release
+
+#flameshot printscreen tmp
+"flameshot gui -p ~/tmp/"
+Shift+Print
+
+#flameshot printscreen
+"pgrep flameshot > /dev/null && flameshot gui || (flameshot & flameshot gui)"
+Print
+
+#slock
+"slock"
+Control+Mod4+l
+
+#slock with suspend
+"slock -- systemctl suspend -i"
+Control+Mod4+p
+
+#thinkvantage x220
+"~/.tv"
+   XF86Launch1
+
+#battery
+"xsetroot -name "$(acpi -i)""
+XF86Battery
+
+#display toggle
+"~/.monitors"
+XF86Display
+
+
+#play using playerctl
+"playerctl play-pause"
+XF86AudioPlay
+
+#pause using playerctl
+"playerctl play-pause"
+XF86AudioStop
+
+#pause using playerctl
+"playerctl play-pause"
+XF86AudioPause
+
