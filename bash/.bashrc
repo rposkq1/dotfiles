@@ -7,6 +7,8 @@
 
 PS1='[\u@\h \W]\$ '
 
+PATH=$PATH:$HOME/.local/bin/
+
 alias t="printf '\033[?1h\033=' >/dev/tty"
 alias ls='ls --color=auto'
 alias la='ls -hal --color=auto'
