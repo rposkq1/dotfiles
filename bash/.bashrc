@@ -45,4 +45,4 @@ alias ca='cage -s --'
 alias kl=bashlock
 alias lk=slock
 alias q=qalc
-alias f='feh --randomize --bg-fill wallpaper/'
+alias f='export bg=1; feh --randomize --bg-fill wallpaper/'
