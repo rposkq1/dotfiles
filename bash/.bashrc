@@ -25,7 +25,7 @@ setterm --blank 1 &>/dev/null
 setterm --appcursorkeys off &>/dev/null
 
 export FFF_HIDDEN=1
-f () {
+ff () {
     fff "$@"
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
@@ -45,3 +45,4 @@ alias ca='cage -s --'
 alias kl=bashlock
 alias lk=slock
 alias q=qalc
+alias f='feh --randomize --bg-fill wallpaper/'

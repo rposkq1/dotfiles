@@ -11,6 +11,7 @@
 touch /tmp/.RND && chmod 600 /tmp/.RND
 openssl rand -hex 8 > /tmp/.RND
 slstatus &
+feh --randomize --bg-fill ~/wallpaper/*
 
 unclutter --timeout 1 --jitter 1 --ignore-scrolling --fork --start-hidden
 xbindkeys
