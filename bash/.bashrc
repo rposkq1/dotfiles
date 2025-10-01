@@ -46,3 +46,5 @@ alias kl=bashlock
 alias lk=slock
 alias q=qalc
 alias f='export bg=1; feh --randomize --bg-fill wallpaper/'
+alias m='mpv --shuffle --loop-playlist '
+alias mm='mpv --shuffle --loop-playlist /m'
