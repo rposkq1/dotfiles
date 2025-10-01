@@ -7,8 +7,6 @@
 
 PS1='[\u@\h \W]\$ '
 
-PATH=$PATH:$HOME/.local/bin/
-
 alias t="printf '\033[?1h\033=' >/dev/tty"
 alias ls='ls --color=auto'
 alias la='ls -hal --color=auto'
@@ -34,7 +32,6 @@ export HISTFILE=/dev/null
 export PATH=$PATH:/home/rposkq/.local/bin
 
 alias bl=bluetoothctl
-alias tb="nc termbin.com 9999 | xclip -selection c"
 alias lw=librewolf
 alias s=startx
 alias yt="cd $HOME/yt && yt-dlp -f 'bestaudio[ext=m4a]+bestvideo[height=480]'"
