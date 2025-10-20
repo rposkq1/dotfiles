@@ -11,9 +11,9 @@
 touch /tmp/.RND && chmod 600 /tmp/.RND
 openssl rand -hex 8 > /tmp/.RND
 slstatus &
-if [ "$bg" -eq 1 ]; then
-    feh --randomize --bg-fill ~/wallpaper
-fi
+#if [ "$bg" -eq 1 ]; then
+#    feh --randomize --bg-fill ~/wallpaper
+#fi
 
 unclutter --timeout 1 --jitter 1 --ignore-scrolling --fork --start-hidden
 xbindkeys
