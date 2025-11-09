@@ -44,4 +44,4 @@ alias yt="cd $HOME/yt && yt-dlp -f 'bestaudio[ext=m4a]+bestvideo[height=480]'"
 alias f='export bg=1; feh --randomize --bg-fill wallpaper/'
 alias m='mpv --loop-playlist '
 alias mm='mpv --loop-playlist --shuffle'
-alias dv='dtach -A /tmp/dvtm.sock -r winch dvtm'
+alias dv='dtach -A /tmp/dvtm.sock -r winch dvtm-status'
