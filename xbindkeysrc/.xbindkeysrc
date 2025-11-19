@@ -130,7 +130,7 @@ Mod1+e+Release
 Shift+Print
 
 #flameshot printscreen
-"pgrep flameshot > /dev/null && flameshot gui || (flameshot & flameshot gui)"
+"(pgrep flameshot > /dev/null) || (flameshot &); flameshot gui"
 Print
 
 #slock
