@@ -29,7 +29,7 @@ ff () {
 }
 export CALCHISTFILE=/dev/null
 export HISTFILE=/dev/null
-export PATH=$PATH:/home/rposkq/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 
 alias s='startx'
 
